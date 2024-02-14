@@ -1,0 +1,40 @@
+h1 {
+    color: rgb(2, 30, 151);
+}
+
+#alissa {
+    height: 400px;
+    width: 300px;
+}
+
+.aboutMe p {
+    position: relative;
+    width: 60%;
+    left: 25%;
+    bottom: 300px;
+}
+
+#interests {
+    position: absolute;
+    display: inline-flex;
+    bottom: 300px;
+}
+
+#interests h3 {
+    display: inline;
+    position: relative;
+    left: 46%;
+    bottom: 100px;
+}
+
+#interests li {
+    position: relative;
+    left: 200px;
+    bottom: 50px;
+}
+
+#churro{
+    height: 400px;
+    width: 500px;
+    
+}
