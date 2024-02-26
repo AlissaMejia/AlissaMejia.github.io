@@ -1,0 +1,61 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 10px;
+  box-sizing: border-box;
+}
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid black;
+}
+.grid-item img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+}
+.grid-goat {
+  grid-column: 1;
+  grid-row: 1 ;
+}
+
+.grid-frog {
+  grid-column: 2 / span 3;
+  grid-row: 1 / span 2;
+}
+
+.grid-girrafe{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.grid-wolf {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.grid-cow {
+  grid-row: 3;
+  grid-column: 2 / span 2;
+}
+
+.grid-tiger {
+  grid-column: 4;
+  grid-row: 3 / span 2;
+}
+
+.grid-meerkat {
+  grid-column: 1 / span 3;
+}
