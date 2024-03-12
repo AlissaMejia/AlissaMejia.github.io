@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings Website</title>
+    <script>
+        function displayGreetings() {
+            var today = new Date();
+            var day = today.getDay(); // Returns a number between 0-6
+            var hour = today.getHours(); // Returns a number between 0-23
+            var greeting;
+
+            if (hour < 12) {
+                greeting = "Good Morning";
+            } else if (hour < 18) {
+                greeting = "Good Afternoon";
+            } else {
+                greeting = "Good Evening";
+            }
+
+            if (day === 1) {
+                greeting += " Do you have a case of the Mondays?";
+            }
+
+            if (day === 2) { // Tuesday
+                greeting += " Happy Tuesday!";
+            } else if (day === 3) { // Wednesday
+                greeting += " Happy Hump Day!";
+            } else if (day === 4) { // Thursday
+                greeting += " Thumbs up it's Thursday!";
+            } else if (day === 5) { // Friday
+                greeting += " Fantastic Friday!";
+            } else if (day === 6) { // Saturday
+                greeting += " Super Saturday!";
+            } else if (day === 0) { // Sunday
+                greeting += " Lazy Sunday!";
+            }
+
+            document.getElementById("greeting").textContent = greeting;
+        }
+    </script>
+</head>
+
+<body onload="displayGreetings()">
+    <h1>Welcome!</h1>
+    <p id="greeting"></p>
+</body>
+</html>
