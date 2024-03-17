@@ -1,0 +1,295 @@
+html{
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/*Replaces regular font with custom font*/
+@font-face { 
+    font-family: PacMan;
+    src: url(../fonts/prstartk.ttf);
+    font-style: normal;
+} 
+
+/*Creates "blinking" animation for Insert coin message*/
+@keyframes blink {
+    80% {
+        opacity: 0;
+    }
+}
+
+/*Creates animation of object moving forward for home page, the pacman will run of the left side and emerge on the right side*/
+@keyframes forward{
+    0% {
+        left: 100%;
+    }
+
+    100%{
+        left: -50%;
+    }
+}
+
+/*Creates animation of object moving forward for how to play page, the pacman will run off the right side and emerge on the left side*/
+@keyframes forwardChase{
+    0% {
+        right: 100%;
+    }
+
+    100%{
+        right: -100%;
+    }
+}
+
+body {
+    font-family: PacMan;
+    margin: 0;
+}
+
+nav {
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    padding: 40px 40px;
+    color: #fff;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffd300;
+    transition: .5s all ease;
+}
+
+.title {
+    position: relative;
+    top: 50px;
+    left: 30%;
+}
+
+.title img {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.message {
+    color: #fff;
+    position:relative;
+    animation: blink 1s infinite linear;
+    text-align:center;
+    top: 250px;
+}
+
+.main section:nth-child(1){
+    position: relative;
+    text-align: center;
+    padding: 10%;
+}
+
+.main section h1:nth-child(1){
+    color: #ffd300;
+}
+
+.main section h3:nth-child(2) {
+    position: relative;
+    text-align: center;
+}
+
+.main section:nth-child(2) {
+    display:inline-flex;
+    position: relative;
+    margin: 15%;
+    padding: 20%;
+    bottom: 600px;
+    text-align: center;
+    align-items: center;
+}
+
+.main section li {
+    list-style-type: none;
+}
+
+.instructions {
+    position: relative;
+    top: 210px;
+    color: #fff;
+    text-align: center;
+}
+
+.characters img {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    padding-left: 40%;
+    top: 50px;
+}
+
+.characters h3{
+    text-align: center;
+}
+
+.characters h4{
+    position: relative;
+    text-align: left;
+    margin-left: 45%;
+    word-spacing: 30px;
+}
+
+.points {
+    align-items:start;
+    position: relative;
+}
+.points img{
+    height: 50px;
+    width: 50px;
+    left: 200px;
+    position: relative;
+    display: inline-flex;
+    bottom: 400px;
+}
+
+.points h4{
+    position: relative;
+    text-align: left;
+    margin-left: 40%;
+    padding: 2%;
+    bottom: 150px;
+}
+/*Creates square image*/
+.bigSquare{
+    height: 30px;
+    width: 30px;
+    background-color: #ffd300;
+    left: 150px;
+    position: relative;
+    display: inline-flex;
+    bottom: 360px;
+}
+
+.smallSquare{
+    height: 20px;
+    width: 20px;
+    background-color: #ffd300;
+    left: 105px;
+    position: relative;
+    display: inline-flex;
+    bottom: 290px;
+}
+
+/*Will select line and assign colour to the text, i.e for rankings the 1st, 5th and 9th line will be orange*/
+.rankings li:nth-of-type(4n+1) {
+    color: #ffa002;
+}
+
+.rankings li:nth-of-type(4n+2) {
+    color: #ff0401;
+}
+
+.rankings li:nth-of-type(4n+3) {
+    color: #01f8f8;
+}
+
+.rankings li:nth-of-type(4n+4) {
+    color: #ff60b0;
+}
+
+.scores li:nth-of-type(4n+1) {
+    color: #ffa002;
+}
+
+.scores li:nth-of-type(4n+2) {
+    color: #ff0401;
+}
+
+.scores li:nth-of-type(4n+3) {
+    color: #01f8f8;
+}
+
+.scores li:nth-of-type(4n+4) {
+    color: #ff60b0;
+}
+
+
+.initials li:nth-of-type(4n+1) {
+    color: #ffa002;
+}
+
+.initials li:nth-of-type(4n+2) {
+    color: #ff0401;
+}
+
+.initials li:nth-of-type(4n+3) {
+    color: #01f8f8;
+}
+
+.initials li:nth-of-type(4n+4) {
+    color: #ff60b0;
+}
+
+.animation{
+    position:relative;
+    top: 200px;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.pacMan img {
+    position: relative;
+    margin-right: 50px;
+    height: 80px;
+    width: 80px;
+    animation: forward 5s linear infinite;
+    transform: rotateY(180deg);
+}
+
+
+.ghosts img {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    animation: forward 5s linear infinite;
+    bottom: 85px;
+}
+.ghosts img:nth-child(1){
+    padding-left: 300px;
+}
+
+.animation-two{
+    position:relative;
+    top: 200px;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.pacManChase img{
+    position: relative;
+    margin-right: 50px;
+    height: 80px;
+    width: 80px;
+    animation: forwardChase 5s linear infinite;
+}
+
+.eaten img {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    animation: forwardChase 5s linear infinite;
+    bottom: 85px;
+}
+.eaten img:nth-child(1){
+    padding-left: 300px;
+}
+
+footer{
+    text-align: center;
+    position: relative;
+    top: 370px;
+}
