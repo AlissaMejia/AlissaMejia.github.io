@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(61, 147, 239);
+}
+
+#pixelPoopDash{
+    position: relative;
+    width: 60%;
+    left: 20%;
+    bottom: 100px;
+}
+
+#german{
+    width: 10%;
+    height: 10%;
+}
+
+#poop{
+    width: 10%;
+    height: 10%;
+}
