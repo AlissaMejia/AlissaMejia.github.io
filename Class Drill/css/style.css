@@ -1,0 +1,134 @@
+body,html{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    background-color: white;
+    color: #222;
+    overflow-x: hidden;
+}
+
+.nav{
+    height: 10vh;
+    background-color: aqua;
+    display: flex;
+}
+
+.nav ol{
+    width: 20vw;
+    margin-left: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.nav ol li {
+   display: flex;
+}
+
+.nav ol li a {
+    color: #222;
+    margin-left: auto;
+    font-size: 1.9em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3 all ease;
+}
+
+.nav ol li a:hover{
+    color: rgb(18, 52, 207);
+}
+
+.header {
+    position: relative;
+    display: flex;
+}
+  
+.header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.box {
+    position: absolute;
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-80%,-40%); 
+    background-color: #ffffffa2; 
+    color: #222; 
+    border: 5px solid white;
+    padding: 10px 100px 150px 20px; 
+    font-size: 1em; 
+    text-align: left;
+}
+
+.flex{
+    display: flex;
+    padding: 30px;
+}
+
+.flex h1{
+    background-color: aqua;
+    margin: 0;
+}
+
+.box1,.box2,.box3,.box4{
+    margin: 10px;
+    border: 3px solid aqua;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.box1 button{
+    position: relative;
+    left: 35%;
+}
+
+.box2 button{
+    position: relative;
+    left: 35%;
+}
+
+.box3 button{
+    position: relative;
+    left: 35%;
+}
+
+.box4 button{
+    position: relative;
+    left: 35%;
+}
+
+.main{
+    column-count: 2;
+    padding: 0% 10% 10% 10%;
+    margin: 0;
+}
+
+.main-right{
+    position: relative;
+    top: 10%;
+}
+
+.footer{
+    background-color: #222;
+    font-size: .7em;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    bottom: 80px;
+    position: relative;
+}
+
+.footer h1{
+    background-color: aqua;
+    margin: 0;
+}
+
+.fbox1, .fbox2, .fbox3{
+    display: inline-block;
+    margin: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+}
