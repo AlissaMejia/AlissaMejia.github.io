@@ -1,0 +1,164 @@
+html,body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:#FF3131;
+}
+
+h1{
+  margin-bottom: 0;
+}
+
+.header{
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+}
+
+.title{
+  color: #FAB617;
+  font-size: 2em;
+}
+
+.instructions{
+  color: #f6f6f6;
+  width: 100%;
+}
+
+#mazeContainer {
+  position: relative;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  opacity: 0;
+  display: inline-block;
+}
+
+#mazeContainer #mazeCanvas {
+  margin: 0;
+  position: relative;
+  bottom: 50px;
+  display: block;
+  background-color: #ffffff;
+  border: solid 1px black;
+}
+
+input,select {
+  transition-property: background-color opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  cursor:pointer;
+  background-color: #FAB617;
+  height: 45px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  appearance: none;
+}
+
+input:hover,select:hover {
+  background-color: rgb(27, 175, 32);
+}
+
+input:active,select:active {
+  background-color: black;
+}
+
+input:focus,select:focus {
+  outline: none;
+}
+
+.custom-select {
+  display: inline-block;
+}
+
+.custom-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAh0lEQVQ4T93TMQrCUAzG8V9x8QziiYSuXdzFC7h4AcELOPQAdXYovZCHEATlgQV5GFTe1ozJlz/kS1IpjKqw3wQBVyy++JI0y1GTe7DCBbMAckeNIQKk/BanALBB+16LtnDELoMcsM/BESDlz2heDR3WePwKSLo5eoxz3z6NNcFD+vu3ij14Aqz/DxGbKB7CAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: 125px center;
+}
+
+#Message-Container {
+  visibility: hidden;
+  color: white;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#Message-Container #message {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+#page {
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+#page #menu {
+  margin: auto;
+  padding: 10px;
+  height: 65px;
+  box-sizing: border-box;
+}
+
+#page #menu h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+
+#page #view {
+  position: absolute;
+  top: 300px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.border {
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+  input,
+  select {
+    width: 120px;
+  }
+}
